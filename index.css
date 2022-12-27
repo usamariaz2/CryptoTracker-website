@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    width: 100%;
+    color: white;
+}
+#logo{
+    flex-grow: 1;
+    margin-left:12px ;
+}
+nav{
+    background-color: rgb(24, 24, 24,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+.navlist{
+    display: flex;
+    flex-grow: 1;
+}
+.navitem{
+    /* padding: 12px; */
+    list-style-type:none ;
+    padding: 12px;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btns{
+    display: flex;
+}
+.navitem:hover{
+    color: rgb(134, 13, 13);
+}
+
+button{
+   margin: 20px;
+   border: none;
+   padding: 12px;
+text-align: center;
+border-radius:12px ;
+position: relative;
+}
+#login{
+    width: 10vw;
+}
+#login:hover{
+background-color: rgb(159, 163, 166);
+}
+#register{
+    background-color: #60D2BB;
+   width:10vw;
+}
+#register:hover{
+    background-color: #5c958a;
+
+}
+
+.container{
+    margin: 12px;
+    display: flex;
+    background-color: #262a2a;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+.image{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.border{
+    border: 3px solid white;
+    border-radius: 200px;
+    padding: 15px;
+    background-color: #5c958a;
+}
+.name {
+     background-color: aqua;
+     padding: 40px;
+     height: 50vh;
+     width: 360px;
+     border-radius: 180px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.name h1{
+    background-color: rgb(33, 33, 33);
+    padding: 12px;
+    height: 200px;
+    width: 120px;
+    border: 4px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 13px;
+    font-style: oblique;
+}
+.name:hover{
+    background-color: rgb(68, 89, 89);
+}
+.name h1:hover{
+    background-color: aqua;
+    color: black;
+}
+.content{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.content h2{
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.content h4{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+#btn{
+    margin-top: 12px;
+    background-color: #60D2BB;
+    width: 130px;
+    border: none; 
+    font-size: larger;
+}
+#btn:hover{
+    background-color: aqua;
+    color: white;
+}
+.compines{
+    margin: 80px 14px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    background-color: #262a2a;
+    overflow: hidden;
+}
+
+.compnies-item{
+   font-style: italic;
+   width: 100vw;
+   font-size: 2em;
+   padding: 10px;
+}
+.compnies-item:hover{
+ color: rgb(174, 134, 15);
+}
+.topcurrencies{
+    margin-top: 50px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    background-image: linear-gradient( rgb(30, 157, 174),rgb(13, 13, 13));
+}
+.currencyitem{
+    background-color: rgb(20, 20, 20);
+    border: 2px solid rgb(10, 122, 156);
+    padding: 50px;
+    width: 15vw;
+    height: 35vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: white 2px 3px 7px;
+}
+img{
+    width: 80px;
+    border-radius: 40px;
+}
+@media (max-width:500px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        padding: 15px;
+        width: 100vw;
+    }
+    .image{
+        margin: 12px;
+    }
+    .btns{
+        display: none;
+    }
+    #logo{
+        display: none;
+    }
+   .nav{
+    display: flex;
+   }
+}
